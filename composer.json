@@ -6,11 +6,11 @@
         "php": "^8.0",
         "ext-json": "*",
         "fromhome/payment": "1.0a4",
-        "illuminate/config": "^8.58",
-        "illuminate/container": "^8.58",
-        "illuminate/events": "^8.58",
-        "illuminate/http": "^8.58",
-        "illuminate/support": "^8.58"
+        "illuminate/config": "^8.0",
+        "illuminate/container": "^8.0",
+        "illuminate/events": "^8.0",
+        "illuminate/http": "^8.0",
+        "illuminate/support": "^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.20",
