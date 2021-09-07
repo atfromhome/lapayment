@@ -1,0 +1,58 @@
+{
+    "name": "fromhome/lapayment",
+    "description": "FromHome payment Laravel integration",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "fromhome/payment": "1.0a4",
+        "illuminate/config": "^8.58",
+        "illuminate/container": "^8.58",
+        "illuminate/events": "^8.58",
+        "illuminate/http": "^8.58",
+        "illuminate/support": "^8.58"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.20",
+        "phpunit/phpunit": "^9.5",
+        "symplify/easy-coding-standard": "^9.2",
+        "vimeo/psalm": "^4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "FromHome\\LaPayment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FromHome\\LaPayment\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "FromHome\\LaPayment\\LaPaymentServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "ecs": "ecs check",
+        "ecs-fix": "ecs check --fix",
+        "psalm": "psalm",
+        "test": "phpunit",
+        "test-local": "phpunit -c phpunit.local.xml --stop-on-failure",
+        "check-local": [
+            "@ecs-fix",
+            "@psalm",
+            "@test-local"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
